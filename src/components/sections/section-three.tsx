@@ -47,7 +47,7 @@ const productList = [
     bengkirai: [
       {
         name: "Flooring",
-        value: "N/A",
+        value: "1,5cm x 9cm x 30-120cm",
       },
       {
         name: "Decking",
@@ -87,11 +87,11 @@ const productList = [
     jati: [
       {
         name: "Flooring",
-        value: "N/A",
+        value: "1,5cm x 9cm x 30-120cm",
       },
       {
         name: "Decking",
-        value: "1,9cm x 9cm x 90-390cm",
+        value: "N/A",
       },
       {
         name: "Lumberceiling",
@@ -107,7 +107,7 @@ const productList = [
     ulin: [
       {
         name: "Flooring",
-        value: "1,5cm x 9cm x 30-120cm",
+        value: "N/A",
       },
       {
         name: "Decking",
@@ -127,7 +127,7 @@ const productList = [
     keruing: [
       {
         name: "Flooring",
-        value: "1,5cm x 9cm x 30-120cm",
+        value: "N/A",
       },
       {
         name: "Decking",
@@ -228,7 +228,7 @@ const SectionThree = () => {
     <div>
       <Card maxW="sm" className="!bg-[#ebf1eb]">
         <CardBody>
-          <Image src={ProductImgThree.src} alt="ENC Krikis" />
+          <Image src={ProductImgThree.src} alt="ENC Merbau" />
           <Stack mt="6" spacing="3">
             <Heading size="md">ENC Merbau</Heading>
             <Text>Natural Finish & UV Coat (Flooring)</Text>
@@ -263,10 +263,10 @@ const SectionThree = () => {
     <div>
       <Card maxW="sm" className="!bg-[#ebf1eb]">
         <CardBody>
-          <Image src={ProductImgFour.src} alt="ENC Krikis" />
+          <Image src={ProductImgFour.src} alt="ENC Jati" />
           <Stack mt="6" spacing="3">
             <Heading size="md">ENC Jati</Heading>
-            <Text>Natural Finish</Text>
+            <Text>Natural Finish & UV Coating</Text>
             {productList[3].jati?.map(({ name, value }, index) => (
               <div className="grid grid-cols-5 gap-1" key={"jati" + index}>
                 <Text className="col-span-2">{name}</Text>
@@ -298,10 +298,10 @@ const SectionThree = () => {
     <div>
       <Card maxW="sm" className="!bg-[#ebf1eb]">
         <CardBody>
-          <Image src={ProductImgFive.src} alt="ENC Krikis" />
+          <Image src={ProductImgFive.src} alt="ENC Ulin" />
           <Stack mt="6" spacing="3">
             <Heading size="md">ENC Ulin</Heading>
-            <Text>Natural Finish & UV Coat (Flooring)</Text>
+            <Text>Natural Finish</Text>
             {productList[4].ulin?.map(({ name, value }, index) => (
               <div className="grid grid-cols-5 gap-1" key={"ulin" + index}>
                 <Text className="col-span-2">{name}</Text>
@@ -333,10 +333,10 @@ const SectionThree = () => {
     <div>
       <Card maxW="sm" className="!bg-[#ebf1eb]">
         <CardBody>
-          <Image src={ProductImgSix.src} alt="ENC Krikis" />
+          <Image src={ProductImgSix.src} alt="ENC Keruing" />
           <Stack mt="6" spacing="3">
             <Heading size="md">ENC Keruing</Heading>
-            <Text>Natural Finish & UV Coat (Flooring)</Text>
+            <Text>Natural Finish</Text>
             {productList[5].keruing?.map(({ name, value }, index) => (
               <div className="grid grid-cols-5 gap-1" key={"keruing" + index}>
                 <Text className="col-span-2">{name}</Text>
